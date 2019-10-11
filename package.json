@@ -22,6 +22,7 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
-    "magnific-popup": "^1.1.0"
+    "magnific-popup": "^1.1.0",
+    "mixitup": "^3.3.1"
   }
 }

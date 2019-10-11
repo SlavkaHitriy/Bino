@@ -29,3 +29,24 @@ body{
    padding: 0 15px;
    margin: 0 auto;
 }
+.title{
+    color: #6a6a6a;
+    font-family: $pro;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    margin-bottom: 25px;
+}
+.icon{
+    display: block;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-color: #f4f5f9;
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(#fff, .25);
+    background-repeat: no-repeat;
+    background-position: center;
+}
