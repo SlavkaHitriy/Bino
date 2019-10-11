@@ -182,12 +182,12 @@
             }
             .advantages__img.glasses{
                 &::before{
-                    animation: rotateIcon .7s;
+                    animation: rotateIcon .7s infinite;
                 }
             }
             .advantages__img.heart{
                 &::before{
-                    animation: beatHeart .7s;
+                    animation: beatHeart .7s infinite;
                 }
             }
             .advantages__img.comment{
@@ -199,6 +199,68 @@
         }
         .advantages__images-light{
             background-color: #000;
+            position: relative;
+            span{
+                display: block;
+                position: absolute;
+                background-color: yellow;
+                border-radius: 50%;
+                z-index: 1;
+                &:nth-child(2){
+                    width: 4px;
+                    height: 4px;
+                    opacity: 1;
+                    animation: lightMicro1 1s infinite;
+                    animation-delay: 1s;
+                }
+                &:nth-child(3){
+                    width: 3px;
+                    height: 3px;
+                    animation: lightMicro2 1s infinite; 
+                    animation-delay: .2s;
+                }
+                &:nth-child(4){
+                    width: 2px;
+                    height: 2px;
+                    animation: lightMicro3 1s infinite; 
+                    animation-delay: .5s;
+                }
+                &:nth-child(5){
+                    width: 5px;
+                    height: 5px;
+                    animation: lightMicro4 1s infinite;
+                    animation-delay: .4s; 
+                }
+                &:nth-child(6){
+                    width: 2px;
+                    height: 2px;
+                    animation: lightMicro5 1s infinite; 
+                }
+                &:nth-child(7){
+                    width: 3px;
+                    height: 3px;
+                    animation: lightMicro6 1s infinite; 
+                    animation-delay: .8s;
+                }
+                &:nth-child(8){
+                    width: 1px;
+                    height: 1px;
+                    animation: lightMicro7 1s infinite; 
+                    animation-delay: .6s;
+                }
+                &:nth-child(9){
+                    width: 4px;
+                    height: 4px;
+                    animation: lightMicro8 1s infinite; 
+                    animation-delay: .9s;
+                }
+                &:nth-child(10){
+                    width: 3px;
+                    height: 3px;
+                    animation: lightMicro9 1s infinite; 
+                    animation-delay: .1s;
+                }
+            }
             .advantages__img.light{
                 &::before{
                     color: yellow;
@@ -218,7 +280,114 @@
         }
     }
 }
-
+@keyframes lightMicro1{
+    0%{
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+    }
+    100%{
+        opacity: 1;
+        top: 40%;
+        left: 10%;
+    }
+}
+@keyframes lightMicro2{
+    0%{
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+    }
+    100%{
+        opacity: 1;
+        top: 10%;
+        left: 40%;
+    }
+}
+@keyframes lightMicro3{
+    0%{
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+    }
+    100%{
+        opacity: 1;
+        top: 10%;
+        left: 50%;
+    }
+}
+@keyframes lightMicro4{
+    0%{
+        opacity: 0;
+        top: 50%;
+        left: 60%;
+    }
+    100%{
+        opacity: 1;
+        top: 25%;
+        left: 15%;
+    }
+}
+@keyframes lightMicro5{
+    0%{
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+    }
+    100%{
+        opacity: 1;
+        top: 10%;
+        left: 25%;
+    }
+}
+@keyframes lightMicro6{
+    0%{
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+    }
+    100%{
+        opacity: 1;
+        top: 30%;
+        left: 30%;
+    }
+}
+@keyframes lightMicro7{
+    0%{
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+    }
+    100%{
+        opacity: 1;
+        top: 25%;
+        left: 40%;
+    }
+}
+@keyframes lightMicro8{
+    0%{
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+    }
+    100%{
+        opacity: 1;
+        top: 50%;
+        left: 20%;
+    }
+}
+@keyframes lightMicro9{
+    0%{
+        opacity: 0;
+        top: 50%;
+        left: 50%;
+    }
+    100%{
+        opacity: 1;
+        top: 45%;
+        left: 25%;
+    }
+}
 @keyframes rotateIcon{
     0%{
         transform: rotate(0deg);
@@ -794,6 +963,36 @@
     justify-content: space-between;
     padding-top: 67px;
 }
+.pricing-business{
+    &:hover{
+        .pricing__item-top{
+            background-color: blue;
+        }
+        .pricing__btn{
+            background-color: blue;
+        }
+    }
+}
+.pricing-start{
+    &:hover{
+        .pricing__item-top{
+            background-color: greenyellow;
+        }
+        .pricing__btn{
+            background-color: greenyellow;
+        }
+    }
+}
+.pricing-premium{
+    &:hover{
+        .pricing__item-top{
+            background-color: $red;
+        }
+        .pricing__btn{
+            background-color: $red;
+        }
+    }
+}
 .pricing__item{
     max-width: 380px;
     width: 100%;
@@ -804,6 +1003,7 @@
     min-height: 205px;
     background-color: #999;
     position: relative;
+    transition: all .4s;
 }
 .pricing__item-title{
     color: #fff;
@@ -860,6 +1060,7 @@
     padding: 19px 10px;
     text-align: center;
     margin: 48px auto 0;
+    transition: all .4s;
 }
 
 
@@ -1011,6 +1212,7 @@
     padding-top: 67px;
 }
 .others__item{
+    display: block;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 80% 60%;
@@ -1114,9 +1316,9 @@
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    margin-bottom: 24px;
+    margin-bottom: 15px;
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     &::after{
         content: '';
         position: absolute;
@@ -1129,7 +1331,7 @@
 }
 .blog__item-text{
     font-size: 16px;
-    line-height: 30px;
+    line-height: 28px;
     margin-bottom: 15px;
 }
 .blog__item-link{
@@ -1279,6 +1481,7 @@
 .footer{
     background-color: #202020;
     padding: 35px 0;
+    position: relative;
 }
 .footer__inner{
     display: flex;
@@ -1304,4 +1507,47 @@
     font-family: $sans;
     color: rgba(#999, .75);
     line-height: 24px;
+}
+.footer__btn{
+    position: absolute;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    background-color: $red;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    right: 52px;
+    transform: translateY(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    animation: footerBtn 2s infinite;
+    cursor: pointer;
+    &::before{
+        animation: footerAngle 3s infinite;
+    }
+}
+
+@keyframes footerBtn{
+    0%{
+        bottom: 100%;
+    }
+    50%{
+        bottom: 110%;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+@keyframes footerAngle{
+    0%{
+        transform: rotate(0deg);
+    }
+    30%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }

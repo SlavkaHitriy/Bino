@@ -1,5 +1,69 @@
 $(function(){
 
+   new WOW().init();
+   
+   $('.home-link').on('click', function () {
+      var top = $('.history').offset().top;
+      $('html, body').animate({
+         scrollTop: top
+      }, 700)
+   });
+
+   $('.about-link').on('click', function () {
+      var top = $('.services').offset().top;
+      $('html, body').animate({
+         scrollTop: top
+      }, 700)
+   });
+
+   $('.portfolio-link').on('click', function () {
+      var top = $('.works').offset().top;
+      $('html, body').animate({
+         scrollTop: top
+      }, 700)
+   });
+
+   $('.pricing-link').on('click', function () {
+      var top = $('.pricing').offset().top;
+      $('html, body').animate({
+         scrollTop: top
+      }, 700)
+   });
+
+   $('.team-link').on('click', function () {
+      var top = $('.team').offset().top;
+      $('html, body').animate({
+         scrollTop: top
+      }, 700)
+   });
+
+   $('.blog-link').on('click', function () {
+      var top = $('.blog').offset().top;
+      $('html, body').animate({
+         scrollTop: top
+      }, 700)
+   });
+
+   $('.contact-link').on('click', function () {
+      var top = $('.keep').offset().top;
+      $('html, body').animate({
+         scrollTop: top
+      }, 700)
+   });
+
+   $('.anchor').on('click', function () {
+      var top = $('.advantages').offset().top;
+      $('html, body').animate({
+         scrollTop: top
+      }, 700)
+   });
+
+   $('.footer__btn').on('click', function () {
+      var top = $('.header').offset().top;
+      $('html, body').animate({
+         scrollTop: top
+      }, 700)
+   });
 
    $('.header__slider-inner').slick({
       infinite: false,
@@ -35,6 +99,7 @@ $(function(){
       return false;
    });
 
+   
 
    var mixer = mixitup('.works__content');
 

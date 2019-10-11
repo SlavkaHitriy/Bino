@@ -18,22 +18,43 @@
     <header class="header" style="background-image: url(images/banner-bg.jpg);">
         <div class="container">
             <div class="header__inner">
-                <a class="header__logo" href="#"></a>
+                <a class="header__logo animated fadeInDownBig" href="#"></a>
                 <nav>
-                    <ul class="header__menu-list">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">PORTFOLIO</a></li>
-                        <li><a href="#">PRICING</a></li>
-                        <li><a href="#">TEAM</a></li>
-                        <li><a href="#">BLOG</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                    <ul class="header__menu-list animated fadeInLeftBig">
+                        <li><a class="home-link" href="#">HOME</a></li>
+                        <li><a class="about-link" href="#">ABOUT US</a></li>
+                        <li><a class="portfolio-link" href="#">PORTFOLIO</a></li>
+                        <li><a class="pricing-link" href="#">PRICING</a></li>
+                        <li><a class="team-link" href="#">TEAM</a></li>
+                        <li><a class="blog-link" href="#">BLOG</a></li>
+                        <li><a class="contact-link" href="#">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
         <div class="header__slider">
             <div class="header__slider-inner">
+                <div class="header__item">
+                    <div class="header__subtitle wow fadeInLeftBig" data-wow-delay=".3s">Our Clients Are Our First Priority</div>
+                    <div class="header__title wow fadeInRightBig" data-wow-delay="1s">WELCOME TO BINO</div>
+                    <div class="header__line line wow fadeInLeftBig" data-wow-delay="1s">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="header__text wow fadeInUpBig" data-wow-delay=".5s">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                        been
+                        the industry's standard
+                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                        it
+                        to make a type specimen
+                        book.
+                    </div>
+                    <div class="header__btns">
+                        <a class="header__btn header__btn-get wow fadeInRightBig" data-wow-delay="1s" href="#">GET STARTED NOW</a>
+                        <a class="header__btn header__btn-more wow fadeInLeftBig" data-wow-delay="1s" href="#">LEARN MORE</a>
+                    </div>
+                </div>
                 <div class="header__item">
                     <div class="header__subtitle">Our Clients Are Our First Priority</div>
                     <div class="header__title">WELCOME TO BINO</div>
@@ -58,28 +79,7 @@
                 <div class="header__item">
                     <div class="header__subtitle">Our Clients Are Our First Priority</div>
                     <div class="header__title">WELCOME TO BINO</div>
-                    <div class="header__line">
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="header__text">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                        been
-                        the industry's standard
-                        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
-                        it
-                        to make a type specimen
-                        book.
-                    </div>
-                    <div class="header__btns">
-                        <a class="header__btn header__btn-get" href="#">GET STARTED NOW</a>
-                        <a class="header__btn header__btn-more" href="#">LEARN MORE</a>
-                    </div>
-                </div>
-                <div class="header__item">
-                    <div class="header__subtitle">Our Clients Are Our First Priority</div>
-                    <div class="header__title">WELCOME TO BINO</div>
-                    <div class="header__line">
+                    <div class="header__line line">
                         <span></span>
                         <span></span>
                     </div>
@@ -104,7 +104,7 @@
     <section class="advantages">
         <div class="container">
             <div class="advantages__inner">
-                <div class="advantages__item">
+                <div class="advantages__item wow fadeInLeft">
                     <div class="advantages__images">
                         <div class="advantages__img glasses"></div>
                     </div>
@@ -116,7 +116,7 @@
                         industry.
                     </div>
                 </div>
-                <div class="advantages__item">
+                <div class="advantages__item wow fadeInUp">
                     <div class="advantages__images">
                         <div class="advantages__img heart"></div>
                     </div>
@@ -128,9 +128,20 @@
                         industry.
                     </div>
                 </div>
-                <div class="advantages__item">
+                <div class="advantages__item wow fadeInUp">
                     <div class="advantages__images advantages__images-light">
-                        <div class="advantages__img light"></div>
+                        <div class="advantages__img light">
+                        </div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                     <div class="advantages__title">
                         CREATIVE IDEAS
@@ -140,7 +151,7 @@
                         industry.
                     </div>
                 </div>
-                <div class="advantages__item">
+                <div class="advantages__item wow fadeInRight">
                     <div class="advantages__images">
                         <div class="advantages__img comment"></div>
                     </div>
@@ -158,8 +169,8 @@
     <section class="history">
         <div class="container">
             <div class="history__inner">
-                <img src="images/monitor.png" alt="monitor">
-                <div class="history__content">
+                <img class="wow fadeInUp" src="images/monitor.png" alt="monitor">
+                <div class="history__content wow fadeInDown" data-wow-delay=".7s">
                     <div class="history__title title">
                         OUR HISTORY
                     </div>
@@ -185,7 +196,7 @@
         </div>
     </section>
     <section class="services">
-        <div class="services__slider">
+        <div class="services__slider wow fadeInRightBig">
             <div class="services__slider-item">
                 <div class="services__inner">
                     <div class="services__content">
@@ -358,7 +369,7 @@
     </section>
     <section class="works">
         <div class="container">
-            <div class="works__inner">
+            <div class="works__inner wow fadeInLeft">
                 <div class="works__title title">
                     RECENT WORKS
                 </div>
@@ -372,7 +383,7 @@
             </div>
         </div>
         <div class="works__wrapper">
-            <div class="works__controls">
+            <div class="works__controls wow fadeInRight">
                 <button type="button" class="works__control" data-filter="all">ALL</button>
                 <button type="button" class="works__control" data-filter=".category-print">PRINT DESIGN</button>
                 <button type="button" class="works__control" data-filter=".category-anim">ANIMATION</button>
@@ -381,7 +392,7 @@
                 <button type="button" class="works__control" data-filter=".category-photo">PHOTOGRAPHY</button>
                 <button type="button" class="works__control" data-filter=".category-video">VIDEO</button>
             </div>
-            <div class="works__content">
+            <div class="works__content wow fadeInUp">
                 <a class="works__item mix category-web" style="background-image: url(../images/item-1.jpg);"
                     data-order="1" href="#">
                     <div class="works__item-text">
@@ -487,7 +498,7 @@
                     <span></span>
                 </div>
                 <div class="study__box">
-                    <div class="study__slider">
+                    <div class="study__slider wow fadeInLeftBig" data-wow-delay="1s">
                         <div class="study__item">
                             <div class="study__icon"></div>
                             <div class="study__slider-title">
@@ -534,7 +545,7 @@
                             <a class="study__slider-link" href="#">read more</a>
                         </div>
                     </div>
-                    <div class="study__image" style="background-image: url(images/study-img.jpg);">
+                    <div class="study__image wow fadeInRight" style="background-image: url(images/study-img.jpg);">
 
                     </div>
                 </div>
@@ -544,7 +555,7 @@
     <section class="numbers" style="background-image: url(images/numbers-img.jpg);">
         <div class="container">
             <div class="numbers__inner">
-                <div class="numbers__item">
+                <div class="numbers__item wow fadeInUp">
                     <div class="numbers__icon numbers__icon-heart"></div>
                     <div class="numbers__number">
                         3891
@@ -553,7 +564,7 @@
                         User Favourites
                     </div>
                 </div>
-                <div class="numbers__item">
+                <div class="numbers__item wow fadeInUp" data-wow-delay=".2s">
                     <div class="numbers__icon numbers__icon-post"></div>
                     <div class="numbers__number">
                         281K
@@ -562,7 +573,7 @@
                         Posts Last 24 Hours
                     </div>
                 </div>
-                <div class="numbers__item">
+                <div class="numbers__item wow fadeInUp" data-wow-delay=".4s">
                     <div class="numbers__icon numbers__icon-like"></div>
                     <div class="numbers__number">
                         618
@@ -571,7 +582,7 @@
                         Total Posts
                     </div>
                 </div>
-                <div class="numbers__item">
+                <div class="numbers__item wow fadeInUp" data-wow-delay=".6s">
                     <div class="numbers__icon numbers__icon-star"></div>
                     <div class="numbers__number">
                         178
@@ -580,7 +591,7 @@
                         Campaigns
                     </div>
                 </div>
-                <div class="numbers__item">
+                <div class="numbers__item wow fadeInUp" data-wow-delay=".8s">
                     <div class="numbers__icon numbers__icon-features"></div>
                     <div class="numbers__number">
                         285
@@ -594,7 +605,7 @@
     </section>
     <section class="pricing">
         <div class="container">
-            <div class="pricing__top">
+            <div class="pricing__top wow fadeInDown">
                 <div class="pricing__title title">
                     OUR PRICING
                 </div>
@@ -607,7 +618,7 @@
                 </div>
             </div>
             <div class="pricing__inner">
-                <div class="pricing__item">
+                <div class="pricing__item pricing-start wow fadeInLeft">
                     <div class="pricing__item-top">
                         <div class="pricing__item-title">
                             STARTER
@@ -625,7 +636,7 @@
                     </div>
                     <a class="pricing__btn" href="#">CHOOSE PLAN</a>
                 </div>
-                <div class="pricing__item">
+                <div class="pricing__item pricing-premium wow fadeInUp" data-wow-delay=".3s">
                     <div class="pricing__item-top">
                         <div class="pricing__item-title">
                             PREMIUM
@@ -643,7 +654,7 @@
                     </div>
                     <a class="pricing__btn" href="#">CHOOSE PLAN</a>
                 </div>
-                <div class="pricing__item">
+                <div class="pricing__item pricing-business wow fadeInRight" data-wow-delay=".6s">
                     <div class="pricing__item-top">
                         <div class="pricing__item-title">
                             BUSINESS
@@ -666,7 +677,7 @@
     </section>
     <section class="team">
         <div class="container">
-            <div class="team__top">
+            <div class="team__top wow fadeInUp">
                 <div class="team__title title">
                     OUR TEAM
                 </div>
@@ -679,7 +690,7 @@
                 </div>
             </div>
             <div class="team__inner">
-                <div class="team__item">
+                <div class="team__item wow fadeInUp" data-wow-delay=".2s">
                     <a class="team__images team-photo-1" style="background-image: url(../images/team_item-1.jpg);"
                         href="#">
                         <div class="team__box">
@@ -692,7 +703,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="team__item">
+                <div class="team__item wow fadeInUp" data-wow-delay=".4s">
                     <a class="team__images team-photo-2" style="background-image: url(../images/team_item-2.jpg);"
                         href="#">
                         <div class="team__box">
@@ -705,7 +716,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="team__item">
+                <div class="team__item wow fadeInUp" data-wow-delay=".6s">
                     <a class="team__images team-photo-3" style="background-image: url(../images/team_item-3.jpg);"
                         href="#">
                         <div class="team__box">
@@ -718,7 +729,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="team__item">
+                <div class="team__item wow fadeInUp" data-wow-delay=".8s">
                     <a class="team__images team-photo-4" style="background-image: url(../images/team_item-4.jpg);"
                         href="#">
                         <div class="team__box">
@@ -731,7 +742,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="team__item">
+                <div class="team__item wow fadeInUp" data-wow-delay="1s">
                     <a class="team__images team-photo-5" style="background-image: url(../images/team_item-5.jpg);"
                         href="#">
                         <div class="team__box">
@@ -749,7 +760,7 @@
     </section>
     <section class="others">
         <div class="container">
-            <div class="others__top">
+            <div class="others__top wow fadeInUp">
                 <div class="others__title title">
                     Great Integrations with Others
                 </div>
@@ -765,22 +776,22 @@
                 </div>
             </div>
             <div class="others__inner">
-                <div class="others__item" style="background-image: url(../images/others_logo-1.png);"></div>
-                <div class="others__item" style="background-image: url(../images/others_logo-2.png);"></div>
-                <div class="others__item" style="background-image: url(../images/others_logo-3.png);"></div>
-                <div class="others__item" style="background-image: url(../images/others_logo-4.png);"></div>
-                <div class="others__item big-img" style="background-image: url(../images/others_logo-5.png);"></div>
-                <div class="others__item circle-img" style="background-image: url(../images/others_logo-6.png);"></div>
-                <div class="others__item white-logo" style="background-image: url(../images/others_logo-7.png);">
-                    <span>Наведи</span></div>
-                <div class="others__item imagine-img" style="background-image: url(../images/others_logo-8.png);"></div>
-                <div class="others__item react-img" style="background-image: url(../images/others_logo-9.png);"></div>
-                <div class="others__item vue-img" style="background-image: url(../images/others_logo-10.png);"></div>
+                <a class="others__item wow fadeInUp" style="background-image: url(../images/others_logo-1.png);" href="#"></a>
+                <a class="others__item wow fadeInUp" data-wow-delay=".1s" style="background-image: url(../images/others_logo-2.png);" href="#"></a>
+                <a class="others__item wow fadeInUp" data-wow-delay=".2s" style="background-image: url(../images/others_logo-3.png);" href="#"></a>
+                <a class="others__item wow fadeInUp" data-wow-delay=".3s" style="background-image: url(../images/others_logo-4.png);" href="#"></a>
+                <a class="others__item big-img wow fadeInUp" data-wow-delay=".4s" style="background-image: url(../images/others_logo-5.png);" href="#"></a>
+                <a class="others__item circle-img wow fadeInUp" data-wow-delay=".5s" style="background-image: url(../images/others_logo-6.png);" href="#"></a>
+                <a class="others__item white-logo wow fadeInUp" data-wow-delay=".6s" style="background-image: url(../images/others_logo-7.png);" href="#">
+                    <span>Наведи</span></a>
+                <a class="others__item imagine-img wow fadeInUp" data-wow-delay=".7s" style="background-image: url(../images/others_logo-8.png);" href="#"></a>
+                <a class="others__item react-img wow fadeInUp" data-wow-delay=".8s" style="background-image: url(../images/others_logo-9.png);" href="#"></a>
+                <a class="others__item vue-img wow fadeInUp" data-wow-delay=".9s" style="background-image: url(../images/others_logo-10.png);" href="#"></a>
             </div>
         </div>
     </section>
     <section class="blog">
-        <div class="blog__top">
+        <div class="blog__top wow fadeInUp">
             <div class="blog__title title">
                 OUR BLOG
             </div>
@@ -793,10 +804,10 @@
             </div>
         </div>
         <div class="blog__inner">
-            <div class="blog__item blog__image" style="background-image: url(../images/blog_item-1.jpg);">
+            <div class="blog__item blog__image wow fadeInDown" data-wow-delay=".2s" style="background-image: url(../images/blog_item-1.jpg);">
 
             </div>
-            <div class="blog__item blog__desc">
+            <div class="blog__item blog__desc wow fadeInDown" data-wow-delay=".4s">
                 <div class="blog__item-subtitle">
                     art / t-shirt
                 </div>
@@ -813,10 +824,10 @@
                     Read More
                 </a>
             </div>
-            <div class="blog__item blog__image" style="background-image: url(../images/blog_item-2.jpg);">
+            <div class="blog__item blog__image wow fadeInDown" data-wow-delay=".6s" style="background-image: url(../images/blog_item-2.jpg);">
 
             </div>
-            <div class="blog__item blog__desc">
+            <div class="blog__item blog__desc wow fadeInDown" data-wow-delay=".8s">
                 <div class="blog__item-subtitle">
                     art / t-shirt
                 </div>
@@ -833,7 +844,7 @@
                     Read More
                 </a>
             </div>
-            <div class="blog__item blog__desc">
+            <div class="blog__item blog__desc wow fadeInUp" data-wow-delay="1s">
                 <div class="blog__item-subtitle">
                     art / t-shirt
                 </div>
@@ -850,11 +861,11 @@
                     Read More
                 </a>
             </div>
-            <div class="blog__item blog__image blog__image-down"
+            <div class="blog__item blog__image blog__image-down wow fadeInUp" data-wow-delay="1.2s"
                 style="background-image: url(../images/blog_item-3.jpg);">
 
             </div>
-            <div class="blog__item blog__desc">
+            <div class="blog__item blog__desc wow fadeInUp" data-wow-delay=".9s">
                 <div class="blog__item-subtitle">
                     art / t-shirt
                 </div>
@@ -871,7 +882,7 @@
                     Read More
                 </a>
             </div>
-            <div class="blog__item blog__image blog__image-down"
+            <div class="blog__item blog__image blog__image-down wow fadeInUp" data-wow-delay="1.4s"
                 style="background-image: url(../images/blog_item-4.jpg);">
 
             </div>
@@ -879,7 +890,7 @@
     </section>
     <section class="keep">
         <div class="container">
-            <div class="keep__top">
+            <div class="keep__top wow fadeInUp">
                 <div class="keep__title title">
                     kEEP IN TOUCH
                 </div>
@@ -892,7 +903,7 @@
                 </div>
             </div>
             <div class="keep__inner">
-                <div class="keep__contacts">
+                <div class="keep__contacts wow fadeInUp" data-wow-delay=".5s">
                     <div class="keep__contact-item">
                         <div class="keep__contact-title">
                             OUR ADDRESS
@@ -922,7 +933,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="keep__form">
+                <div class="keep__form wow fadeInDown">
                     <form>
                         <input type="text" placeholder="Name" required>
                         <input type="email" placeholder="Email" required>
@@ -935,7 +946,7 @@
         </div>
     </section>
     <section class="start" style="background-image: url(../images/start-bg.jpg);">
-        <div class="start__inner">
+        <div class="start__inner wow fadeInUp">
             <div class="start__title">
                 Let's Get Started Now. <span>It's FREE!</span>
             </div>
@@ -946,6 +957,7 @@
         </div>
     </section>
     <footer class="footer">
+        <div class="footer__btn icon-angle-up"></div>
         <div class="container">
             <div class="footer__inner">
                 <ul class="footer__socials">
