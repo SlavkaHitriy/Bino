@@ -366,14 +366,19 @@
    .team__box{
       top: 0;
       left: 50px;
+      visibility: visible;
+      opacity: 1;
+   }
+   .team__name {
+      font-size: 20px;
+   }
+   .team__name {
+      margin-bottom: -2px;
    }
    .team__images{
     &:hover{
         &:after{
             display: none;
-        }
-        .team__box{
-            left: 100px;
         }
       } 
    }
