@@ -1545,18 +1545,19 @@
     line-height: 24px;
 }
 .footer__btn{
-    position: absolute;
+    position: fixed;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
     background-color: $red;
     width: 53px;
     height: 53px;
     border-radius: 50%;
-    right: 52px;
-    transform: translateY(50%);
+    right: 55px;
+    bottom: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
+    z-index: 10;
     color: #fff;
     animation: footerBtn 2s infinite;
     cursor: pointer;
@@ -1567,13 +1568,13 @@
 
 @keyframes footerBtn{
     0%{
-        bottom: 100%;
+        top: 80%;
     }
     50%{
-        bottom: 110%;
+        top: 83%;
     }
     100%{
-        bottom: 100%;
+        top: 80%;
     }
 }
 @keyframes footerAngle{
@@ -1587,9 +1588,5 @@
         transform: rotate(360deg);
     }
 }
-
-
-
-
 
 @import "_media";

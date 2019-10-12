@@ -1,18 +1,31 @@
 $(function(){
 
-   var wow = new WOW(
-      {
-         mobile: false,       // trigger animations on mobile devices (default is true)
-      }
-   );
-   wow.init();
-   
    $(function () {
       $("body").niceScroll({
          cursorwidth: "8px",
-         cursorcolor: "#e74c3c"
+         cursorcolor: "#e74c3c",
+         horizrailenabled: false
       });
    });
+
+   $(window).on('scroll', function (e) {
+      e.preventDefault();
+      var works = $('.works').offset().top;
+      var html = $('html').scrollTop();
+      if (works <= html){
+         $('.footer__btn').show();
+      }
+      else{
+         $('.footer__btn').hide();
+      }
+   })
+
+   var wow = new WOW(
+      {
+         mobile: false,
+      }
+   );
+   wow.init();
 
    $('.home-link').on('click', function () {
       var top = $('.history').offset().top;
@@ -76,6 +89,8 @@ $(function(){
          scrollTop: top
       }, 700)
    });
+
+   
 
    $('.header__slider-inner').slick({
       infinite: false,
