@@ -1,9 +1,14 @@
-@media (max-height: 500px){
+@media (max-height: 517px){
    .header__text{
       display: none;
    }
    .header__btns{
       display: flex;
+      align-items: center;
+      margin-top: 10px;
+      .header__btn + .header__btn{
+         margin-top: 0;
+      }
    }
    .header__title{
       margin-bottom: 10px;
@@ -17,17 +22,17 @@
       display: none;
    }
 }
-@media (min-height: 501px){
+@media (max-width: 600px) and (min-height: 501px){
    .header__item{
       padding-top: 50px;
    }
 }
-@media (min-height: 601px){
+@media (max-width: 600px) and (min-height: 601px){
    .header__item{
       padding-top: 100px;
    }
 }
-@media (min-height: 701px){
+@media (max-width: 600px) and (min-height: 701px){
    .header__item{
       padding-top: 150px;
    }
