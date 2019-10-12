@@ -13,10 +13,10 @@ $(function(){
       var works = $('.works').offset().top;
       var html = $('html').scrollTop();
       if (works <= html){
-         $('.footer__btn').show();
+         $('.footer__btn').addClass('scrollBtn');
       }
       else{
-         $('.footer__btn').hide();
+         $('.footer__btn').removeClass('scrollBtn');
       }
    })
 
