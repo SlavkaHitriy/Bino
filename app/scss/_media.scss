@@ -1,11 +1,14 @@
-@media (max-height: 517px){
+@media (max-height: 517px) and (max-width: 600px){
    .header__text{
       display: none;
    }
    .header__btns{
       display: flex;
       align-items: center;
-      margin-top: 10px;
+      margin-top: 20px;
+      .header__btn{
+         margin-top: 0;
+      }
       .header__btn + .header__btn{
          margin-top: 0;
       }
