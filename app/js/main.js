@@ -7,6 +7,13 @@ $(function(){
    );
    wow.init();
    
+   $(function () {
+      $("body").niceScroll({
+         cursorwidth: "8px",
+         cursorcolor: "#e74c3c"
+      });
+   });
+
    $('.home-link').on('click', function () {
       var top = $('.history').offset().top;
       $('html, body').animate({
