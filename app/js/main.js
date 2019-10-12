@@ -71,13 +71,21 @@ $(function(){
       slidesToScroll: 1,
       dots: false,
       prevArrow: '<div class="prev-btn arrow"></div>',
-      nextArrow: '<div class="next-btn arrow"></div>'
+      nextArrow: '<div class="next-btn arrow"></div>',
+      responsive: [
+         {
+            breakpoint: 700,
+            settings: {
+               arrows: false
+            }
+         },
+      ]
   });
 
 
    $('.services__slider').slick({
       arrows: false,
-      verticalSwiping: true,
+      verticalSwiping: false,
       vertical: true,
       dots: true,
       dotsClass: 'services__dots',
