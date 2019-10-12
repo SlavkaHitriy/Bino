@@ -89,6 +89,11 @@ $(function(){
       dotsClass: 'study__dots',
    });
 
+   $('.burger').on('click', () => {
+      $('.header__menu-list').toggleClass('active');
+      $('.burger').toggleClass('active');
+   })
+
 
    $('.works__wrapper .tab').on('click', function (event) {
       var id = $(this).attr('data-id');

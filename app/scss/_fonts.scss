@@ -25,6 +25,15 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-close:before {
+  content: "\f00d";
+}
+.icon-remove:before {
+  content: "\f00d";
+}
+.icon-times:before {
+  content: "\f00d";
+}
 .icon-heart-o:before {
   content: "\f08a";
 }
@@ -42,6 +51,15 @@
 }
 .icon-rss:before {
   content: "\f09e";
+}
+.icon-bars:before {
+  content: "\f0c9";
+}
+.icon-navicon:before {
+  content: "\f0c9";
+}
+.icon-reorder:before {
+  content: "\f0c9";
 }
 .icon-google-plus:before {
   content: "\f0d5";
@@ -73,4 +91,3 @@
 .icon-vimeo:before {
   content: "\f27d";
 }
-
