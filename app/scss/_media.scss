@@ -12,6 +12,26 @@
       padding: 10px 0;
    }
 }
+@media (max-height: 400px){
+   .header__subtitle{
+      display: none;
+   }
+}
+@media (min-height: 501px){
+   .header__item{
+      padding-top: 50px;
+   }
+}
+@media (min-height: 601px){
+   .header__item{
+      padding-top: 100px;
+   }
+}
+@media (min-height: 701px){
+   .header__item{
+      padding-top: 150px;
+   }
+}
 @media (max-width: 1450px){
    .team__box{
       left: -50px;

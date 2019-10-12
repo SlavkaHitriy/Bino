@@ -1,6 +1,11 @@
 $(function(){
 
-   new WOW().init();
+   var wow = new WOW(
+      {
+         mobile: false,       // trigger animations on mobile devices (default is true)
+      }
+   );
+   wow.init();
    
    $('.home-link').on('click', function () {
       var top = $('.history').offset().top;
