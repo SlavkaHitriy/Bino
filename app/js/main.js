@@ -1,13 +1,5 @@
 $(function(){
 
-   $(function () {
-      $("body").niceScroll({
-         cursorwidth: "8px",
-         cursorcolor: "#e74c3c",
-         horizrailenabled: false
-      });
-   });
-
    $(window).on('scroll', function (e) {
       e.preventDefault();
       var works = $('.works').offset().top;

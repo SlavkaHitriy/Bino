@@ -50,8 +50,8 @@
 }
 .burger{
     position: fixed;
-    right: 50px;
-    top: 50px;
+    right: 25px;
+    top: 25px;
     display: none;
     cursor: pointer;
     z-index: 10;
@@ -1551,7 +1551,7 @@
     width: 53px;
     height: 53px;
     border-radius: 50%;
-    right: 55px;
+    right: 25px;
     bottom: 55px;
     display: flex;
     justify-content: center;
@@ -1572,13 +1572,13 @@
 
 @keyframes footerBtn{
     0%{
-        top: 80%;
+        top: 88%;
     }
     50%{
-        top: 83%;
+        top: 91%;
     }
     100%{
-        top: 80%;
+        top: 88%;
     }
 }
 @keyframes footerAngle{
