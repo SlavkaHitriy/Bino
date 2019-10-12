@@ -20,6 +20,14 @@
       padding: 10px 0;
    }
 }
+@media (max-height: 517px) and (max-width: 400px){
+   .header__btns{
+      display: block;
+      .header__btn + .header__btn{
+         margin-top: 10px;
+      }
+   }
+}
 @media (max-height: 400px){
    .header__subtitle{
       display: none;
