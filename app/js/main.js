@@ -120,6 +120,19 @@ $(function(){
       $('.header__menu-list').toggleClass('active');
       $('.burger').toggleClass('active');
    })
+   $('.header__menu-list a').on('click', () => {
+      $('.burger').removeClass('active');
+      $('.header__menu-list').removeClass('active');
+   })
+   $(window).on('click', (e) => {
+      var menu = $('.header__menu-list');
+      var burger = $('.burger');
+      if(!menu.is(e.target) && !burger.is(e.target)
+      && menu.hasClass('active') && burger.hasClass('active')){
+         $('.burger').removeClass('active');
+         $('.header__menu-list').removeClass('active');
+      }
+   })
 
 
    $('.works__wrapper .tab').on('click', function (event) {

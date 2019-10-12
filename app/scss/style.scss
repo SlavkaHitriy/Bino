@@ -1561,6 +1561,7 @@
     color: #fff;
     animation: footerBtn 2s infinite;
     cursor: pointer;
+    box-shadow: 0px 3px 10px 2px rgba(#000, .5);
     display: none;
     &.scrollBtn{
         display: flex;
